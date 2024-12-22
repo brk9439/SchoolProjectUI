@@ -1,0 +1,996 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+                
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                    <h1 class="h3 mb-2 text-gray-800">Sınav Sonuçları</h1>
+                    <a href="@Url.Action("DetailExamResults", "Home")" class="d-none d-sm-inline-block btn btn-sm btn-outline-success shadow-sm">
+                        <i class="fas  fa-sm text-white-50"></i> Detaylı Sınav Sonuçları
+                    </a>
+                </div>
+               
+                    <p class="mb-4">
+                        2024-2025 Öğretim yılı bursluluk sınavı sonuçları aşağıdaki gibidir.
+                    </p>
+
+                    <!-- DataTales Example -->
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Sınav Sonuçları</h6>
+                            
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>TC KİMLİK</th>
+                                            <th>İSİM</th>
+                                            <th>SOYİSİM</th>
+                                            <th>SINAV NOTU</th>
+                                            <th>SINAV NOTU ORANI</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>TC KİMLİK</th>
+                                            <th>İSİM</th>
+                                            <th>SOYİSİM</th>
+                                            <th>SINAV NOTU</th>
+                                            <th>SINAV NOTU ORANI</th>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                        <tr>
+                                            <td>1372</td>
+                                            <td>94057823117</td>
+                                            <td>Dilcan</td>
+                                            <td>Çorlu</td>
+                                            <td>76</td>
+                                            <td>97.59%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>3330</td>
+                                            <td>68036569175</td>
+                                            <td>Bedri</td>
+                                            <td>Türk</td>
+                                            <td>71</td>
+                                            <td>36.77%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>7334</td>
+                                            <td>82144250519</td>
+                                            <td>Balca</td>
+                                            <td>Bilgin</td>
+                                            <td>52</td>
+                                            <td>55.52%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>5239</td>
+                                            <td>40412124260</td>
+                                            <td>Gülşeref</td>
+                                            <td>Şama</td>
+                                            <td>61</td>
+                                            <td>47.62%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4531</td>
+                                            <td>62409094472</td>
+                                            <td>Burakhan</td>
+                                            <td>Öcalan</td>
+                                            <td>52</td>
+                                            <td>82.32%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4487</td>
+                                            <td>41142427745</td>
+                                            <td>Harbinaz</td>
+                                            <td>Zorlu</td>
+                                            <td>83</td>
+                                            <td>2.73%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>8963</td>
+                                            <td>84044249948</td>
+                                            <td>Timurtaş</td>
+                                            <td>Arsoy</td>
+                                            <td>56</td>
+                                            <td>10.55%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>3187</td>
+                                            <td>97262634243</td>
+                                            <td>Ticen</td>
+                                            <td>Duran</td>
+                                            <td>56</td>
+                                            <td>84.62%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>6811</td>
+                                            <td>65907140110</td>
+                                            <td>Toker</td>
+                                            <td>Arslan</td>
+                                            <td>69</td>
+                                            <td>72.98%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>3101</td>
+                                            <td>81072115523</td>
+                                            <td>Laika</td>
+                                            <td>Bilgin</td>
+                                            <td>89</td>
+                                            <td>39.49%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4404</td>
+                                            <td>11406196026</td>
+                                            <td>Almast</td>
+                                            <td>Arslan</td>
+                                            <td>78</td>
+                                            <td>97.18%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>5892</td>
+                                            <td>13616106182</td>
+                                            <td>Maksüde</td>
+                                            <td>Gül</td>
+                                            <td>86</td>
+                                            <td>88.04%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>8706</td>
+                                            <td>56863218342</td>
+                                            <td>Kanak</td>
+                                            <td>Demir</td>
+                                            <td>91</td>
+                                            <td>16.02%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>1688</td>
+                                            <td>82069189122</td>
+                                            <td>Nerim</td>
+                                            <td>Çetin</td>
+                                            <td>91</td>
+                                            <td>31.2%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>2754</td>
+                                            <td>83192091346</td>
+                                            <td>Mesude</td>
+                                            <td>Şama</td>
+                                            <td>71</td>
+                                            <td>76.46%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>8631</td>
+                                            <td>72225118597</td>
+                                            <td>Orgün</td>
+                                            <td>Sezer</td>
+                                            <td>92</td>
+                                            <td>37.16%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>1290</td>
+                                            <td>86517563698</td>
+                                            <td>Özokçu</td>
+                                            <td>Seven</td>
+                                            <td>58</td>
+                                            <td>95.88%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>2826</td>
+                                            <td>94090078140</td>
+                                            <td>Abdülahat</td>
+                                            <td>Çorlu</td>
+                                            <td>91</td>
+                                            <td>71.31%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>3138</td>
+                                            <td>76132042542</td>
+                                            <td>Metinkaya</td>
+                                            <td>Güçlü</td>
+                                            <td>58</td>
+                                            <td>21.05%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>3503</td>
+                                            <td>16187488609</td>
+                                            <td>Tansev</td>
+                                            <td>Soylu</td>
+                                            <td>92</td>
+                                            <td>29.07%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>5556</td>
+                                            <td>96032384694</td>
+                                            <td>Ferihan</td>
+                                            <td>Akar</td>
+                                            <td>98</td>
+                                            <td>60.39%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4063</td>
+                                            <td>54861239487</td>
+                                            <td>Mehdiye</td>
+                                            <td>Fırat</td>
+                                            <td>49</td>
+                                            <td>84.61%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4624</td>
+                                            <td>79650997816</td>
+                                            <td>Hanim</td>
+                                            <td>Hayrioğlu</td>
+                                            <td>63</td>
+                                            <td>17.24%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>1309</td>
+                                            <td>94889254003</td>
+                                            <td>Vezat</td>
+                                            <td>Yorulmaz</td>
+                                            <td>92</td>
+                                            <td>68.56%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>2778</td>
+                                            <td>85207111828</td>
+                                            <td>Ökkaş</td>
+                                            <td>Demirel</td>
+                                            <td>98</td>
+                                            <td>31.09%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4980</td>
+                                            <td>93338505216</td>
+                                            <td>Işın</td>
+                                            <td>Akça</td>
+                                            <td>72</td>
+                                            <td>0.24%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4899</td>
+                                            <td>35258436167</td>
+                                            <td>Cercis</td>
+                                            <td>Yaman</td>
+                                            <td>86</td>
+                                            <td>30.06%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>8079</td>
+                                            <td>71563812249</td>
+                                            <td>Birben</td>
+                                            <td>Sezgin</td>
+                                            <td>64</td>
+                                            <td>99.41%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>7708</td>
+                                            <td>24496841984</td>
+                                            <td>Konguralp</td>
+                                            <td>Durdu</td>
+                                            <td>100</td>
+                                            <td>34.85%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>5237</td>
+                                            <td>91373669170</td>
+                                            <td>Yelesen</td>
+                                            <td>Akgündüz</td>
+                                            <td>57</td>
+                                            <td>1.13%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>6721</td>
+                                            <td>32956116684</td>
+                                            <td>Mecide</td>
+                                            <td>İhsanoğlu</td>
+                                            <td>88</td>
+                                            <td>99.77%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4646</td>
+                                            <td>33599190870</td>
+                                            <td>Çisem</td>
+                                            <td>Soylu</td>
+                                            <td>60</td>
+                                            <td>3.51%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>6006</td>
+                                            <td>76794857371</td>
+                                            <td>Gökbudun</td>
+                                            <td>Akgündüz</td>
+                                            <td>55</td>
+                                            <td>4.36%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>6086</td>
+                                            <td>26014275261</td>
+                                            <td>Pehlil</td>
+                                            <td>Manço</td>
+                                            <td>57</td>
+                                            <td>2.9%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>6953</td>
+                                            <td>53969168579</td>
+                                            <td>Gilman</td>
+                                            <td>Çetin</td>
+                                            <td>71</td>
+                                            <td>5.62%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4842</td>
+                                            <td>67757325413</td>
+                                            <td>Ebuakil</td>
+                                            <td>Ertaş</td>
+                                            <td>59</td>
+                                            <td>98.73%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>7903</td>
+                                            <td>52387216079</td>
+                                            <td>Hürmet</td>
+                                            <td>Demirel</td>
+                                            <td>46</td>
+                                            <td>0.35%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>6701</td>
+                                            <td>81142784195</td>
+                                            <td>Eşref</td>
+                                            <td>Akar</td>
+                                            <td>53</td>
+                                            <td>73.81%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>6570</td>
+                                            <td>77121550315</td>
+                                            <td>Bozerk</td>
+                                            <td>Aksu</td>
+                                            <td>97</td>
+                                            <td>37.61%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>2345</td>
+                                            <td>17674789627</td>
+                                            <td>Tolonbay</td>
+                                            <td>İnönü</td>
+                                            <td>77</td>
+                                            <td>93.06%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4453</td>
+                                            <td>90618373268</td>
+                                            <td>Necdat</td>
+                                            <td>Mansız</td>
+                                            <td>52</td>
+                                            <td>17.27%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>1174</td>
+                                            <td>31765756248</td>
+                                            <td>Amre</td>
+                                            <td>Aslan</td>
+                                            <td>56</td>
+                                            <td>20.13%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>6061</td>
+                                            <td>40903645826</td>
+                                            <td>Baba</td>
+                                            <td>Alemdar</td>
+                                            <td>72</td>
+                                            <td>14.27%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>8046</td>
+                                            <td>65320663562</td>
+                                            <td>Rojnu</td>
+                                            <td>Tevetoğlu</td>
+                                            <td>84</td>
+                                            <td>91.43%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>8265</td>
+                                            <td>85753912567</td>
+                                            <td>Teybet</td>
+                                            <td>Akar</td>
+                                            <td>82</td>
+                                            <td>40.43%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>9797</td>
+                                            <td>10870580166</td>
+                                            <td>Öktürk</td>
+                                            <td>Tarhan</td>
+                                            <td>97</td>
+                                            <td>29.57%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>2536</td>
+                                            <td>36388186251</td>
+                                            <td>İlkbahar</td>
+                                            <td>Sezer</td>
+                                            <td>96</td>
+                                            <td>67.39%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>8324</td>
+                                            <td>85302077529</td>
+                                            <td>Oluş</td>
+                                            <td>İhsanoğlu</td>
+                                            <td>69</td>
+                                            <td>76.49%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>9508</td>
+                                            <td>97535930734</td>
+                                            <td>Ganiye</td>
+                                            <td>Şama</td>
+                                            <td>71</td>
+                                            <td>51.03%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>1608</td>
+                                            <td>41596087437</td>
+                                            <td>Erbay</td>
+                                            <td>Aslan</td>
+                                            <td>88</td>
+                                            <td>86.11%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>3373</td>
+                                            <td>16256135915</td>
+                                            <td>Sebattin</td>
+                                            <td>Bilge</td>
+                                            <td>59</td>
+                                            <td>6.38%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>5057</td>
+                                            <td>77524739051</td>
+                                            <td>Yıldız</td>
+                                            <td>Şafak</td>
+                                            <td>77</td>
+                                            <td>90.31%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>5015</td>
+                                            <td>59722455577</td>
+                                            <td>Çelikkan</td>
+                                            <td>Gül</td>
+                                            <td>91</td>
+                                            <td>21.68%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>7897</td>
+                                            <td>96803011558</td>
+                                            <td>Artan</td>
+                                            <td>Kısakürek</td>
+                                            <td>97</td>
+                                            <td>1.53%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>1521</td>
+                                            <td>69682124282</td>
+                                            <td>Neriban</td>
+                                            <td>İhsanoğlu</td>
+                                            <td>69</td>
+                                            <td>56.77%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>1058</td>
+                                            <td>83114612866</td>
+                                            <td>Çıvgın</td>
+                                            <td>Akar</td>
+                                            <td>52</td>
+                                            <td>50.89%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4827</td>
+                                            <td>10639398545</td>
+                                            <td>Kutay</td>
+                                            <td>Tevetoğlu</td>
+                                            <td>90</td>
+                                            <td>64.03%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>6357</td>
+                                            <td>66420141197</td>
+                                            <td>Gülsevil</td>
+                                            <td>Eraslan</td>
+                                            <td>78</td>
+                                            <td>96.62%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>5965</td>
+                                            <td>21227833077</td>
+                                            <td>Sakip</td>
+                                            <td>Yılmaz</td>
+                                            <td>66</td>
+                                            <td>18.68%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>8616</td>
+                                            <td>87171791879</td>
+                                            <td>Nurda</td>
+                                            <td>Sezgin</td>
+                                            <td>87</td>
+                                            <td>94.84%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>8935</td>
+                                            <td>67205459663</td>
+                                            <td>Borataş</td>
+                                            <td>Alemdar</td>
+                                            <td>83</td>
+                                            <td>41.18%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>3720</td>
+                                            <td>87176545081</td>
+                                            <td>Yümun</td>
+                                            <td>Akçay</td>
+                                            <td>66</td>
+                                            <td>49.28%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4370</td>
+                                            <td>30782759608</td>
+                                            <td>Güçal</td>
+                                            <td>Durmuş</td>
+                                            <td>78</td>
+                                            <td>12.31%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4354</td>
+                                            <td>11016078658</td>
+                                            <td>Mübetcel</td>
+                                            <td>Tarhan</td>
+                                            <td>96</td>
+                                            <td>47.91%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>1584</td>
+                                            <td>36707806379</td>
+                                            <td>Özgün</td>
+                                            <td>Durdu</td>
+                                            <td>95</td>
+                                            <td>30.64%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>9085</td>
+                                            <td>80228470027</td>
+                                            <td>Elöve</td>
+                                            <td>Türk</td>
+                                            <td>56</td>
+                                            <td>6.26%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>8831</td>
+                                            <td>52820602245</td>
+                                            <td>Berkal</td>
+                                            <td>Mansız</td>
+                                            <td>74</td>
+                                            <td>45.36%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>3403</td>
+                                            <td>11403486292</td>
+                                            <td>Görsev</td>
+                                            <td>Aksu</td>
+                                            <td>84</td>
+                                            <td>54.26%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>1046</td>
+                                            <td>20700887601</td>
+                                            <td>Muhip</td>
+                                            <td>Durdu</td>
+                                            <td>85</td>
+                                            <td>2.16%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>6967</td>
+                                            <td>30689216623</td>
+                                            <td>Vafir</td>
+                                            <td>Seven</td>
+                                            <td>95</td>
+                                            <td>28.25%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4719</td>
+                                            <td>97274018380</td>
+                                            <td>Özge</td>
+                                            <td>Akgündüz</td>
+                                            <td>51</td>
+                                            <td>94.28%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>7383</td>
+                                            <td>56398954299</td>
+                                            <td>Gülşa</td>
+                                            <td>Yılmaz</td>
+                                            <td>60</td>
+                                            <td>54.37%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>8100</td>
+                                            <td>63533757303</td>
+                                            <td>Feyha</td>
+                                            <td>İnönü</td>
+                                            <td>90</td>
+                                            <td>46.68%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>2762</td>
+                                            <td>92593277054</td>
+                                            <td>Oganer</td>
+                                            <td>Zengin</td>
+                                            <td>60</td>
+                                            <td>35.56%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>8352</td>
+                                            <td>88172442829</td>
+                                            <td>Ulakbey</td>
+                                            <td>İhsanoğlu</td>
+                                            <td>88</td>
+                                            <td>89.1%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>6909</td>
+                                            <td>62820231664</td>
+                                            <td>Gülfari</td>
+                                            <td>Çetin</td>
+                                            <td>84</td>
+                                            <td>27.68%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>2380</td>
+                                            <td>32574829127</td>
+                                            <td>Yilmaz</td>
+                                            <td>Gül</td>
+                                            <td>72</td>
+                                            <td>51.24%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>1979</td>
+                                            <td>31796208999</td>
+                                            <td>Ergönül</td>
+                                            <td>Ülker</td>
+                                            <td>84</td>
+                                            <td>99.07%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>8019</td>
+                                            <td>18816137438</td>
+                                            <td>Esmanperi</td>
+                                            <td>Demir</td>
+                                            <td>64</td>
+                                            <td>80.57%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>3484</td>
+                                            <td>29062859066</td>
+                                            <td>Telim</td>
+                                            <td>Ertaş</td>
+                                            <td>69</td>
+                                            <td>33.2%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>5940</td>
+                                            <td>29801151947</td>
+                                            <td>Erksoy</td>
+                                            <td>Akdeniz</td>
+                                            <td>76</td>
+                                            <td>85.69%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>8475</td>
+                                            <td>84775227911</td>
+                                            <td>İmrihan</td>
+                                            <td>Çetin</td>
+                                            <td>81</td>
+                                            <td>61.93%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>7352</td>
+                                            <td>28748997005</td>
+                                            <td>Durdali</td>
+                                            <td>Ülker</td>
+                                            <td>99</td>
+                                            <td>20.4%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>5947</td>
+                                            <td>79767719077</td>
+                                            <td>Cihandide</td>
+                                            <td>Ülker</td>
+                                            <td>55</td>
+                                            <td>76.79%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>5305</td>
+                                            <td>51775662650</td>
+                                            <td>Şanlı</td>
+                                            <td>Öcalan</td>
+                                            <td>54</td>
+                                            <td>42.98%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4579</td>
+                                            <td>73515511138</td>
+                                            <td>Ümray</td>
+                                            <td>Öcalan</td>
+                                            <td>68</td>
+                                            <td>65.6%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>2205</td>
+                                            <td>23665549376</td>
+                                            <td>Pembesin</td>
+                                            <td>Fırat</td>
+                                            <td>53</td>
+                                            <td>54.42%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>6096</td>
+                                            <td>25115493859</td>
+                                            <td>Jaruthip</td>
+                                            <td>Bilgin</td>
+                                            <td>53</td>
+                                            <td>2.04%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>3959</td>
+                                            <td>72896860128</td>
+                                            <td>Nafii</td>
+                                            <td>Akçay</td>
+                                            <td>91</td>
+                                            <td>96.92%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>1929</td>
+                                            <td>43887881636</td>
+                                            <td>Zahfer</td>
+                                            <td>Hançer</td>
+                                            <td>53</td>
+                                            <td>22.29%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>8415</td>
+                                            <td>59081173966</td>
+                                            <td>Gökay</td>
+                                            <td>Akar</td>
+                                            <td>84</td>
+                                            <td>14.85%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>1276</td>
+                                            <td>81892405102</td>
+                                            <td>Turabi</td>
+                                            <td>Durdu</td>
+                                            <td>88</td>
+                                            <td>12.55%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>6367</td>
+                                            <td>66421920905</td>
+                                            <td>Nuyan</td>
+                                            <td>Akça</td>
+                                            <td>94</td>
+                                            <td>10.51%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>3443</td>
+                                            <td>19642042344</td>
+                                            <td>Çavuldur</td>
+                                            <td>Tevetoğlu</td>
+                                            <td>73</td>
+                                            <td>18.45%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>6697</td>
+                                            <td>35328097336</td>
+                                            <td>Sarıcabay</td>
+                                            <td>Tevetoğlu</td>
+                                            <td>90</td>
+                                            <td>89.95%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>8329</td>
+                                            <td>79385629127</td>
+                                            <td>Hilayda</td>
+                                            <td>Eraslan</td>
+                                            <td>83</td>
+                                            <td>46.55%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>6480</td>
+                                            <td>80419633422</td>
+                                            <td>Eroğul</td>
+                                            <td>Dumanlı</td>
+                                            <td>60</td>
+                                            <td>26.43%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>8852</td>
+                                            <td>45751555596</td>
+                                            <td>Muvahhide</td>
+                                            <td>Fırat</td>
+                                            <td>61</td>
+                                            <td>30.0%</td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; Your Website 2020</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+   
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="/template/vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="/template/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="/template/js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="/template/vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="/template/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="/template/js/demo/datatables-demo.js"></script>
+
+</body>
