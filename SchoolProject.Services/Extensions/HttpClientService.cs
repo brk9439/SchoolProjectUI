@@ -26,7 +26,8 @@ namespace SchoolProject.Services.Extensions
                     var request = new StringContent(JsonConvert.SerializeObject(requestClass), System.Text.Encoding.UTF8, "application/json");
                     var response = await HttpClient.PostAsync(endpoint, request);
                     string T = await response.Content.ReadAsStringAsync();
-                    return JsonConvert.DeserializeObject<T>(T);
+                    var a = JsonConvert.DeserializeObject<T>(T);
+                    return a;
                 }
             }
             catch (Exception e)

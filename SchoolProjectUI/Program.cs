@@ -18,6 +18,12 @@ var configuration = new ConfigurationBuilder()
 builder.Services.AddSingleton<IConfiguration>(configuration);
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 builder.Services.AddHttpClient<ISchoolService, SchoolService>();
+builder.Services.AddSession(opts =>
+{
+    //opts.Cookie.IsEssential = true; // make the session cookie Essential
+    opts.IdleTimeout = TimeSpan.FromMinutes(120);
+    opts.Cookie.HttpOnly = true;
+});
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddMvc();
@@ -37,9 +43,10 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+app.UseSession();
 
 app.MapControllerRoute(
 	name: "default",
-	pattern: "{controller=Login}/{action=Index}");
+	pattern: "{controller=Login}/{action=Index}/{id?}");
 
 app.Run();
